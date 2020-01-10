@@ -2,66 +2,80 @@
 <html>
 
     <head>
-     <meta name="google">
-     <title>Google mock</title> 
-     <link rel="stylesheet" type="text/css" href="style.css">
+
+        <meta name="google">
+
+        <title>Google mock</title>
+
+        <link rel="stylesheet"
+              type="text/css" 
+              href="style.css">
     </head>
 
     <body>
-<!--NAVIGATION-->
-        <div id="nav">
-            <navbar id="nav-li">
-                <ul>
-                    <li>About</li>
-                    <li>Store</li>
-                    <li>Gmail</li>
-                    <li>Images</li>
-                </ul>
-            </navbar>
+        <div class="grid">
+<!--NAVIGATION-->            
+                    <div class="left-nav">
+                       <a href="about">
+                          About
+                        </a>
 
-            <div id="apps">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Apps-Google-Chrome-App-List-icon.png" alt="google apps logo">
-            </div>
+                       <a href="store">
+                          Store</a>
+                    </div>
 
-            <div id="sign-in">
-                <button>Sign in</button>
-            </div>
-        </div>
+                    <div class="right-nav">
+                       <a href="gmail">
+                          Gmail</a>
+
+                       <a href="images">
+                          Images</a> 
+            
+                       <img 
+                           src="https://image.flaticon.com/icons/png/512/60/60991.png" 
+                           width="40px" 
+                           alt="google apps logo">
+
+                       <button class="right-nav">
+                        Sign in</button>
+                    </div>
+             
+             
 <!--LOGO, SEARCHBAR, BUTTONS-->
-        <div id="center">
-
-            <div id="logo">
-                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
-            </div>
+          
+              <div id="logo">
+                  <img class="brand" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
+              </div>
 <!--ADD MAGNIFYING GLASS AND MICROPHONE TO SEARCHBAR-->
-            <div id="searchbar">
-                <input type="search">
-            </div>
+              <div id="searchbar">
+                  <input type="search">
+              </div>
 
-            <div id="buttons">
-                <div id="left-button">
-                    <button>Google Search</button>
-                </div>
-                <div id="right-button">
-                    <button>I'm Feeling Lucky</button>
-                </div>
-            </div>
-        </div>
-
+              
+                  <div id="buttons">
+                      <button>Google Search</button>
+        
+                      <button>I'm Feeling Lucky</button>
+                  </div>
+              
+    
+     </div>
     </body>
 
     <foot>
 <!--FOOTER LINKS-->
         <footer>
-            <ul>
-                <li>Advertising</li>
-                <li>Business</li>
-                <li>How Search Works</li>
-                <li>Privacy</li>
-                <li>Terms</li>
-                <li>Settings</li>
-            </ul>
+            <div class="left-foot">
+                <a href="advertising">Advertising</a>
+                <a href="business">Business</a>
+                <a href="how">How Search Works</a>
+            </div>
+            <div class="right-foot">
+                <a href="privacy">Privacy</a>
+                <a href="terms">Terms</a>
+                <a href="settings">Settings</a>
+            </div>
         </footer>
     </foot>
-
+    
 </html>
