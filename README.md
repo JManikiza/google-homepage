@@ -10,4 +10,4 @@ Still missing the magnifying glass from the searchbar input and missing the coun
 
 Other than all that I'd say I have done a great job and have learnt a lot in this process which shall make my next project a tad easier hopefully (see: google-resultspage).
 
-
+Must use more git, get in to good habits of regular commits and structured work.
