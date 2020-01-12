@@ -47,18 +47,34 @@ table {
 
 /*START STYLE.CSS BELOW*/
 
-
-
 /*BODY*/
+
 
 body {
     font-family: arial, sans-serif;
+    overflow: hidden;
+}
+
+a {
+    padding-left: 15px;
+    color:#000;
+    opacity: 0.75;
+    font-size: 13px;
+}
+
+a:link {
+    text-decoration: none;
+    
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     } 
@@ -68,32 +84,101 @@ body {
 .left-nav {
     grid-row: 1;
     grid-column: 1;
+    padding: 15px;
 }
 
 .right-nav {
     grid-row: 1;
     grid-column: 3;
     text-align: right;
+    padding: 10px;
 }
+
+.app {
+    width: 15px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.sign-in {
+    color: #fff;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    background: #4285f4;
+    display: inline-block;
+    line-height: 28px;
+    padding: 0 12px;
+    border-radius: 2px;
+}
+
 /*CENTER*/
 
 #logo {
-    grid-row: 2;
-    grid-column: 2;
-    text-align: center;
-}
-
-#searchbar {
     grid-row: 3;
     grid-column: 2;
     text-align: center;
 }
 
-#buttons {
+#searchbar {
     grid-row: 4;
     grid-column: 2;
     text-align: center;
+    padding-top:20px;
+    
 }
 
+input {
+    width: 600px;
+    height: 40px;
+    border-style: solid;
+    border-radius: 25px;
+    padding-left: 40px;
+}
+
+input:hover {
+    box-shadow: 1px 1px 1px 1px rgba(241, 237, 237, 0.541);
+}
+
+#buttons {
+    grid-row: 5;
+    grid-column: 2;
+    text-align: center;
+}
+.button {
+    background-color:#f2f2f2;
+    border: 1px solid#f2f2f2;
+    border-radius: 4px;
+    color:#5F6368;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    cursor: progress;
+}
 
 /*FOOTER*/
+
+#footer {
+    grid-row: 10;
+    grid-column: 1/4;
+    background-color: rgba(238, 238, 238, 0.925);
+    border: 1px solid rgb(214, 214, 214);
+    padding: 15px;
+    height: 15px;
+    margin-top: 48.1px;
+
+}
+.left-foot {
+    grid-column: 1/2;
+    float:left;
+   
+}
+
+.right-foot {
+    grid-column: 3/4;
+    float:right;
+
+}
